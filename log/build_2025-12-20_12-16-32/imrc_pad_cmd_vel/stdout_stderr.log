@@ -1,0 +1,35 @@
+running egg_info
+creating build/imrc_pad_cmd_vel/imrc_pad_cmd_vel.egg-info
+writing build/imrc_pad_cmd_vel/imrc_pad_cmd_vel.egg-info/PKG-INFO
+writing dependency_links to build/imrc_pad_cmd_vel/imrc_pad_cmd_vel.egg-info/dependency_links.txt
+writing entry points to build/imrc_pad_cmd_vel/imrc_pad_cmd_vel.egg-info/entry_points.txt
+writing requirements to build/imrc_pad_cmd_vel/imrc_pad_cmd_vel.egg-info/requires.txt
+writing top-level names to build/imrc_pad_cmd_vel/imrc_pad_cmd_vel.egg-info/top_level.txt
+writing manifest file 'build/imrc_pad_cmd_vel/imrc_pad_cmd_vel.egg-info/SOURCES.txt'
+reading manifest file 'build/imrc_pad_cmd_vel/imrc_pad_cmd_vel.egg-info/SOURCES.txt'
+writing manifest file 'build/imrc_pad_cmd_vel/imrc_pad_cmd_vel.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/imrcmini2/ros2_ws/src/ros_pad_cmd_vel/build/imrc_pad_cmd_vel/build
+creating /home/imrcmini2/ros2_ws/src/ros_pad_cmd_vel/build/imrc_pad_cmd_vel/build/lib
+creating /home/imrcmini2/ros2_ws/src/ros_pad_cmd_vel/build/imrc_pad_cmd_vel/build/lib/imrc_pad_cmd_vel
+copying imrc_pad_cmd_vel/__init__.py -> /home/imrcmini2/ros2_ws/src/ros_pad_cmd_vel/build/imrc_pad_cmd_vel/build/lib/imrc_pad_cmd_vel
+copying imrc_pad_cmd_vel/pad_cmd_vel.py -> /home/imrcmini2/ros2_ws/src/ros_pad_cmd_vel/build/imrc_pad_cmd_vel/build/lib/imrc_pad_cmd_vel
+running install
+running install_lib
+creating /home/imrcmini2/ros2_ws/src/ros_pad_cmd_vel/install/imrc_pad_cmd_vel/lib/python3.10/site-packages/imrc_pad_cmd_vel
+copying /home/imrcmini2/ros2_ws/src/ros_pad_cmd_vel/build/imrc_pad_cmd_vel/build/lib/imrc_pad_cmd_vel/__init__.py -> /home/imrcmini2/ros2_ws/src/ros_pad_cmd_vel/install/imrc_pad_cmd_vel/lib/python3.10/site-packages/imrc_pad_cmd_vel
+copying /home/imrcmini2/ros2_ws/src/ros_pad_cmd_vel/build/imrc_pad_cmd_vel/build/lib/imrc_pad_cmd_vel/pad_cmd_vel.py -> /home/imrcmini2/ros2_ws/src/ros_pad_cmd_vel/install/imrc_pad_cmd_vel/lib/python3.10/site-packages/imrc_pad_cmd_vel
+byte-compiling /home/imrcmini2/ros2_ws/src/ros_pad_cmd_vel/install/imrc_pad_cmd_vel/lib/python3.10/site-packages/imrc_pad_cmd_vel/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/imrcmini2/ros2_ws/src/ros_pad_cmd_vel/install/imrc_pad_cmd_vel/lib/python3.10/site-packages/imrc_pad_cmd_vel/pad_cmd_vel.py to pad_cmd_vel.cpython-310.pyc
+running install_data
+creating /home/imrcmini2/ros2_ws/src/ros_pad_cmd_vel/install/imrc_pad_cmd_vel/share/ament_index
+creating /home/imrcmini2/ros2_ws/src/ros_pad_cmd_vel/install/imrc_pad_cmd_vel/share/ament_index/resource_index
+creating /home/imrcmini2/ros2_ws/src/ros_pad_cmd_vel/install/imrc_pad_cmd_vel/share/ament_index/resource_index/packages
+copying resource/imrc_pad_cmd_vel -> /home/imrcmini2/ros2_ws/src/ros_pad_cmd_vel/install/imrc_pad_cmd_vel/share/ament_index/resource_index/packages
+copying package.xml -> /home/imrcmini2/ros2_ws/src/ros_pad_cmd_vel/install/imrc_pad_cmd_vel/share/imrc_pad_cmd_vel
+running install_egg_info
+Copying build/imrc_pad_cmd_vel/imrc_pad_cmd_vel.egg-info to /home/imrcmini2/ros2_ws/src/ros_pad_cmd_vel/install/imrc_pad_cmd_vel/lib/python3.10/site-packages/imrc_pad_cmd_vel-0.0.0-py3.10.egg-info
+running install_scripts
+Installing pad_cmd_vel script to /home/imrcmini2/ros2_ws/src/ros_pad_cmd_vel/install/imrc_pad_cmd_vel/lib/imrc_pad_cmd_vel
+writing list of installed files to '/home/imrcmini2/ros2_ws/src/ros_pad_cmd_vel/build/imrc_pad_cmd_vel/install.log'

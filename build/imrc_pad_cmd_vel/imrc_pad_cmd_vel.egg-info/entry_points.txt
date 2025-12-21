@@ -1,0 +1,3 @@
+[console_scripts]
+pad_cmd_vel = imrc_pad_cmd_vel.pad_cmd_vel:main
+

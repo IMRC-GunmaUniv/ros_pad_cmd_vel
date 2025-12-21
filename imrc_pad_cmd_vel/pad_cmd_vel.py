@@ -28,12 +28,15 @@ class pad_cmd_vel(Node):
         if abs(value) < self.deadzone:
             return 0.0
         return value
+    
+    def clamp_u8(self, value):
+        return float(max(0,min(255,int(value))))
+    
 
     def pad_cmd_vel_callback(self, msg):
-        self.vel.linear.x = self.apply_deadzone(msg.axes[0])
-        self.vel.linear.y = self.apply_deadzone(msg.axes[1])
-
-        self.vel.angular.z= msg.axes[3]
+        self.vel.linear.x = self.clamp_u8(127 + self.apply_deadzone(msg.axes[1]) * 128) #直進方向（前方方向が正）
+        self.vel.linear.y = self.clamp_u8(127 + self.apply_deadzone(msg.axes[0]) * 128) #横方向　（左が正）
+        self.vel.angular.z= self.clamp_u8(127 + self.apply_deadzone(msg.axes[3]) * 128) #回転方向　（反時計ガ性）
 
         self.pub.publish(self.vel) 
         self.get_logger().info(f'Lx={self.vel.linear.x} Ly={self.vel.linear.y} Az={self.vel.angular.z}')
