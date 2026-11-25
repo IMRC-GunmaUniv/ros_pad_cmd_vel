@@ -12,12 +12,15 @@ class pad_cmd_vel(Node):
     def __init__(self):
         super().__init__('pad_cmd_vel')
         self.sub = self.create_subscription(Joy, '/joy', self.pad_cmd_vel_callback,10)
-        self.pub = self.create_publisher(Twist,'/cmd_vel_pad',10)
+        self.pub = self.create_publisher(Twist,'/cmd_vel_can',10)
 
         self.vel = Twist() 
         self.vel.linear.x = 0.0
         self.vel.linear.y = 0.0
         self.vel.angular.z = 0.0
+
+        self.max_linear_speed = 2.0  # 最大直進速度
+        self.max_angular_speed = 3.0  # 最大回転速度
 
         #パラメータ
         self.declare_parameter('deadzone', 0.1)
